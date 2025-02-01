@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <!-- SDK MercadoPago.js -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+</head>
+<body>
+    <!-- Container para o botão de pagamento -->
+    <div id="payment-button"></div>
+
+    <script>
+        const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+        const bricksBuilder = mp.bricks();
+
+        // Configuração do botão de pagamento
+        bricksBuilder.create('wallet', 'payment-button', {
+            initialization: {
+                preferenceId: 'YOUR_PREFERENCE_ID' // ID da preferência criada no backend
+            },
+            callbacks: {
+                onError: error => console.error(error),
+                onReady: () => console.log('Checkout pronto!')
+            }
+        });
+    </script>
+</body>
+</html>

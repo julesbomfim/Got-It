@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ingleswebsite">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>ingleswebsite</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    const serviceWorkerVersion = null;
+  </script>
+  <script src="flutter.js" defer></script>
+  <base href="/">
+<meta name="flutter-web-plugin" content="chewie_web">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+
+
+<title>ingleswebsite</title>
+<link rel="manifest" href="manifest.json">
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+  function openCheckoutPro(publicKey, preferenceId) {
+    const mp = new MercadoPago(publicKey);
+    mp.checkout({
+      preference: {
+        id: preferenceId
+      }
+    });
+  }
+</script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+  <script src="main.dart.js" type="application/javascript"></script>
+  
+  <script>
+    window.addEventListener('load', function(ev) {
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+
+
+<!-- 
+<title>Redirecting...</title>
+<script type="text/javascript">
+  window.location.href = "https://ingles-ac531.web.app/register";
+</script> -->
+
+
+
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+
+  
+   
+    const firebaseConfig = {
+      apiKey: "AIzaSyACaCem1uR2k8gLFptPoiGpG6JI4JB5bHg",
+      authDomain: "ingles-ac531.firebaseapp.com",
+      projectId: "ingles-ac531",
+      storageBucket: "ingles-ac531.appspot.com",
+      messagingSenderId: "840863626445",
+      appId: "1:840863626445:web:057f8ff6c7acf6d6742584"
+    };
+  
+    const app = initializeApp(firebaseConfig);
+  </script>
+
+
+<script src="https://podplayer.net/lib/v1/player.js"></script>
+</body>
+</html>
